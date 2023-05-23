@@ -22,4 +22,7 @@ public class Besitzer{
   public void erhalteTaschenGeld(double summe){
     geld = geld + summe;
   }
+  public String getName() {
+      return name;
+  }
 }
