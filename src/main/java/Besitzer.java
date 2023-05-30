@@ -11,7 +11,7 @@ public class Besitzer{
   public double getGeld(){
     return geld;
   }
-  public void FahreDeinenRoller(int strecke){
+  public void fahreDeinenRoller(int strecke){
     roller.fahre(strecke);
   }
   public void tankeDeinenRoller(double menge){

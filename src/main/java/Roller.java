@@ -10,8 +10,14 @@ public class Roller{
     this.tankinhalt = tankinhalt;
   }
   
-  public void tanke(double menge){
+  public boolean tanke(double menge){
+    if (menge + tankinhalt > tankgroesse){
+      System.out.println("Zu Viel getankt");
+      tankinhalt = tankgroesse;
+      return false;
+    }
     tankinhalt = tankinhalt + menge;
+    return true;
   }
   public void fahre(int strecke){
     
